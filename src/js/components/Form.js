@@ -29,10 +29,6 @@ class ConnectedForm extends Component {
         event.preventDefault();
         const {title} = this.state;
         const id = uuidv1();
-        // ===============Redux Middleware================
-        // let's add a check for forbidden words
-
-        // ===============Redux Middleware================
         this.props.addArticle({title, id});  // props can use because of constructor ?????
         this.setState({title: ""});
     }
